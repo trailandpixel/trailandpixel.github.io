@@ -41,18 +41,32 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar px-4" style="
-  position: absolute;
+<nav style="
+  position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 10;
-  background: transparent;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 30px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
 ">
-  <a class="navbar-brand text-white" href="#" style="font-weight: 600;">
+
+  <a href="index.html" style="color:white; font-weight:600; text-decoration:none;">
     Trail & Pixel
   </a>
+
+  <div style="display:flex; gap:20px;">
+    <a href="index.html#journal" style="color:white; text-decoration:none;">Journal</a>
+    <a href="photography.html" style="color:white; text-decoration:none;">Photography</a>
+    <a href="map.html" style="color:white; text-decoration:none;">Map</a>
+    <a href="about.html" style="color:white; text-decoration:none;">About</a>
+  </div>
+
 </nav>
 
-<!-- Hero Section (FULL BLEED) -->
+<!-- Hero Section -->
 <div style="
   position: relative;
   width: 100vw;
