@@ -12,26 +12,79 @@
 
 <body>
 
+<!-- Navbar -->
 <nav class="navbar navbar-light bg-light px-4">
   <a class="navbar-brand" href="#">Trail & Pixel</a>
 </nav>
 
+<!-- Hero Section -->
+<div class="container-fluid p-0">
+  <div style="background: url('images/hero.jpg') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center;">
+    <div style="background-color: rgba(0,0,0,0.4); padding: 20px 40px; border-radius: 5px;">
+      <h1 class="text-white text-center">Trail & Pixel</h1>
+      <p class="text-white text-center mb-0">Journeys through landscapes and light</p>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content -->
 <div class="container mt-5">
 
-  <h1>Trail & Pixel</h1>
-
-  <p>
-    A travel and photography journal by a full-time engineer, backpacker, and beginner photographer.
-  </p>
+  <!-- Intro -->
+  <div class="mb-5">
+    <p>
+      I’m a full-time engineer, traveling whenever I can. Somewhere along the way, I picked up a camera and started paying more attention — to light, to details, to moments that would otherwise pass unnoticed.
+    </p>
+    <p>
+      Trail & Pixel is my journal. A place to collect those moments, and share them.
+    </p>
+  </div>
 
   <hr>
 
-  <h3>Latest journeys</h3>
+  <!-- Latest Entry -->
+  <div class="mb-5">
+    <h3>Latest Entry</h3>
 
-  <ul>
-    <li>Florence Weekend (coming soon)</li>
-    <li>Srilanka Backpacking (coming soon)</li>
-  </ul>
+    <div class="card mt-3">
+      <img src="images/dolomites.jpg" class="card-img-top" alt="Latest journey">
+      <div class="card-body">
+        <h5 class="card-title">Three days in the Dolomites</h5>
+        <p class="card-text">
+          Rain, fog, and one unexpected sunrise that made the whole trip worth it.
+        </p>
+        <a href="#" class="btn btn-outline-dark btn-sm">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Photography Preview -->
+  <div class="mb-5">
+    <h3>Photography</h3>
+
+    <div class="row mt-3">
+      <div class="col-md-4 mb-3">
+        <img src="images/photo1.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/photo2.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/photo3.jpg" class="img-fluid">
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-outline-dark btn-sm">View gallery</a>
+  </div>
+
+  <hr>
+
+  <!-- About Link -->
+  <div class="text-center mb-5">
+    <a href="#" class="text-muted">More about me →</a>
+  </div>
 
 </div>
 
