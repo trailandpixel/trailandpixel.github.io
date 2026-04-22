@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dolomites | Trail & Pixel</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.8;
+    }
+
+    /* NAV */
+    nav {
+      position: absolute;
+      width: 100%;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    /* HERO */
+    .hero {
+      height: 70vh;
+      background: url('images/dolomites.jpg') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+    }
+
+    .hero-content {
+      position: relative;
+      padding: 40px;
+      max-width: 800px;
+    }
+
+    .hero-content h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-top: 8px;
+    }
+
+    /* ARTICLE */
+    .content {
+      max-width: 750px;
+      margin: 70px auto;
+      padding: 0 25px;
+      font-size: 1.08rem;
+      color: #333;
+    }
+
+    .content p {
+      margin-bottom: 22px;
+    }
+
+    /* IMAGE BREAKS */
+    .photo {
+      width: 100%;
+      margin: 50px 0;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* QUOTE */
+    .quote {
+      font-style: italic;
+      color: #555;
+      border-left: 2px solid rgba(0,0,0,0.2);
+      padding-left: 20px;
+      margin: 40px 0;
+    }
+
+    /* FOOTER NAV */
+    .bottom-nav {
+      max-width: 750px;
+      margin: 80px auto;
+      padding: 0 25px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      padding-top: 30px;
+    }
+
+    .bottom-nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div><a href="index.html"><strong>Trail & Pixel</strong></a></div>
+  <div>
+    <a href="journal.html">Back to Journal</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Three days in the Dolomites</h1>
+    <div class="meta">Italy · Winter 2025</div>
+  </div>
+
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <p>
+    Rain was falling when I arrived. The mountains were hidden, almost erased behind a wall of fog. It felt like the landscape was holding back its presence.
+  </p>
+
+  <p>
+    I walked without expectation. No views, no horizons—just sound, texture, and cold air. The mountains were there, even if I could not see them yet.
+  </p>
+
+  <!-- IMAGE -->
+  <div class="photo">
+    <img src="images/dolomites_fog.jpg">
+  </div>
+
+  <p>
+    The next morning changed everything. Light slowly broke through the valley, revealing shapes that had been hidden the day before.
+  </p>
+
+  <p>
+    It was not just a view. It was a shift in atmosphere—like the place was slowly revealing itself, layer by layer.
+  </p>
+
+  <!-- IMAGE -->
+  <div class="photo">
+    <img src="images/dolomites_sunrise.jpg">
+  </div>
+
+  <div class="quote">
+    Sometimes travel is not about where you go, but about what gradually becomes visible.
+  </div>
+
+  <p>
+    I left after three days with wet shoes, cold hands, and a memory that felt much larger than the journey itself.
+  </p>
+
+</div>
+
+<!-- NAVIGATION -->
+<div class="bottom-nav">
+  <a href="#">← Previous</a>
+  <a href="journal.html">All posts</a>
+  <a href="#">Next →</a>
+</div>
+
+</body>
+</html>
