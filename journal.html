@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Journal | Trail & Pixel</title>
+<title>Journal | Trail & Pixel</title>
 
   <style>
     body {
@@ -14,7 +14,7 @@
       background: #fff;
     }
 
-    /* NAV (same style as homepage) */
+    /* NAV (same as homepage) */
     nav {
       position: absolute;
       width: 100%;
@@ -31,42 +31,47 @@
       font-size: 0.95rem;
     }
 
-    /* HERO */
+    /* HERO (identity section) */
     .hero {
       height: 45vh;
-      background: url('../images/journal_header.jpg') center/cover no-repeat;
+      background: url('images/journal_header.jpg') center/cover no-repeat;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       text-align: center;
+      color: white;
     }
 
     .overlay {
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.45);
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.45)
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 700px;
+      padding: 0 20px;
     }
 
     .hero h1 {
-      position: relative;
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       font-weight: 500;
       margin: 0;
     }
 
-    /* INTRO */
-    .intro {
-      max-width: 800px;
-      margin: 60px auto 40px auto;
-      padding: 0 25px;
-      text-align: center;
-      color: #444;
-      font-size: 1.05rem;
+    .hero p {
+      margin-top: 10px;
+      font-weight: 300;
+      opacity: 0.9;
     }
 
-    /* FEED */
+  /* FEED */
     .container {
       max-width: 900px;
       margin: 0 auto 100px auto;
@@ -119,13 +124,13 @@
 
 <!-- NAV -->
 <nav>
-  <div><a href="../index.html"><strong>Trail & Pixel</strong></a></div>
+  <div><a href="index.html"><strong>Trail & Pixel</strong></a></div>
   <div>
-    <a href="../index.html">Home</a>
-    <a href="../about.html">About Me</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
     <a href="journal.html">Journal</a>
-    <a href="../photography.html">Photography</a>
-    <a href="../map.html">Map</a>
+    <a href="photography.html">Photography</a>
+    <a href="map.html">Map</a>
   </div>
 </nav>
 
@@ -138,6 +143,8 @@
     <h1>Journal</h1>
     <p>Stories from the road</p>
   </div>
+
+</div>
 
 <!-- ENTRIES -->
 <div class="container">
