@@ -17,11 +17,23 @@
 
     h3 {
       font-weight: 600;
+      margin-bottom: 20px;
     }
 
     hr {
-      margin: 50px 0;
-      opacity: 0.25;
+      margin: 60px 0;
+      opacity: 0.2;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.7;
     }
   </style>
 </head>
@@ -29,14 +41,21 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-light bg-transparent px-4" style="position: absolute; width: 100%; z-index: 10;">
-  <a class="navbar-brand text-white" href="#">Trail & Pixel</a>
+<nav class="navbar px-4" style="
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+">
+  <a class="navbar-brand text-white" href="#" style="font-weight: 600;">
+    Trail & Pixel
+  </a>
 </nav>
 
 <!-- Hero Section (FULL BLEED) -->
 <div style="
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 70vh;
   background: url('images/hero.jpg') center/cover no-repeat;
   display: flex;
@@ -90,7 +109,7 @@
 <div class="content">
 
   <!-- Intro -->
-  <div class="mb-5">
+  <div>
 
     <p>
       I’m a full-time engineer, traveling whenever I can. Somewhere along the way, I picked up a camera and started paying more attention — to light, to places, and to the small details that usually go unnoticed.
@@ -104,29 +123,31 @@
 
   <hr>
 
-  <!-- Latest Entry -->
-  <div class="mb-5">
+  <!-- Journal Feed -->
+  <div>
 
-    <h3>Latest Entry</h3>
+    <h3>Journal</h3>
 
-    <div class="card mt-4 shadow-sm" style="border: none;">
-      <img src="images/dolomites.jpg" class="card-img-top" alt="Latest journey">
+    <div style="margin-top: 30px; padding-bottom: 30px; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <img src="images/dolomites.jpg" style="width:100%; border-radius:6px;">
+      <h5 style="margin-top:15px;">Three days in the Dolomites</h5>
+      <p>Rain, fog, and one unexpected sunrise that made the whole trip worth it.</p>
+      <a href="journal/dolomites.html" style="font-weight:500; text-decoration:none;">Read story →</a>
+    </div>
 
-      <div class="card-body">
-        <h5 class="card-title">Three days in the Dolomites</h5>
-        <p class="card-text">
-          Rain, fog, and one unexpected sunrise that made the whole trip worth it.
-        </p>
-        <a href="#" class="btn btn-outline-dark btn-sm">Read story</a>
-      </div>
+    <div style="margin-top: 30px;">
+      <img src="images/florence.jpg" style="width:100%; border-radius:6px;">
+      <h5 style="margin-top:15px;">Florence Weekend Walks</h5>
+      <p>Slow mornings, warm stone streets, and light over the Arno.</p>
+      <a href="journal/florence.html" style="font-weight:500; text-decoration:none;">Read story →</a>
     </div>
 
   </div>
 
   <hr>
 
-  <!-- Photography Preview -->
-  <div class="mb-5">
+  <!-- Photography -->
+  <div>
 
     <h3>Photography</h3>
 
@@ -134,13 +155,13 @@
 
     <div class="row mt-4">
       <div class="col-md-4 mb-3">
-        <img src="images/photo1.jpg" class="img-fluid">
+        <img src="images/photo1.jpg" class="img-fluid" style="border-radius:6px;">
       </div>
       <div class="col-md-4 mb-3">
-        <img src="images/photo2.jpg" class="img-fluid">
+        <img src="images/photo2.jpg" class="img-fluid" style="border-radius:6px;">
       </div>
       <div class="col-md-4 mb-3">
-        <img src="images/photo3.jpg" class="img-fluid">
+        <img src="images/photo3.jpg" class="img-fluid" style="border-radius:6px;">
       </div>
     </div>
 
@@ -150,10 +171,12 @@
 
   <hr>
 
-  <!-- About Link -->
-  <div class="text-center mb-5 text-muted">
+  <!-- About -->
+  <div class="text-center">
 
-    <a href="#" class="text-dark">More about me →</a>
+    <a href="#" style="color:#222; text-decoration:none; font-weight:500;">
+      More about me →
+    </a>
 
   </div>
 
