@@ -23,6 +23,235 @@
       padding: 18px 30px;
       display: flex;
       justify-content: space-between;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    /* MAIN SPLIT */
+    .wrapper {
+      display: flex;
+      min-height: 100vh;
+      padding-top: 80px;
+    }
+
+    /* LEFT IMAGE */
+    .left {
+      width: 40%;
+      position: sticky;
+      top: 80px;
+      height: calc(100vh - 80px);
+    }
+
+    .left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* RIGHT CONTENT */
+    .right {
+      width: 60%;
+      padding: 70px 80px;
+      max-width: 750px;
+    }
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 18px;
+      color: #333;
+    }
+
+    /* PHOTO STRIP */
+    .photo-strip {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .photo-strip img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* LINKS */
+    .links {
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .links a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    .links span {
+      display: block;
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .wrapper {
+        flex-direction: column;
+      }
+
+      .left {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+      }
+
+      .right {
+        width: 100%;
+        padding: 40px 25px;
+      }
+
+      .photo-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-strip img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div><a href="index.html"><strong>Trail & Pixel</strong></a></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="journal.html">Journal</a>
+    <a href="photography.html">Photography</a>
+    <a href="map.html">Map</a>
+  </div>
+</nav>
+
+<!-- LAYOUT -->
+<div class="wrapper">
+
+  <!-- LEFT: YOU -->
+  <div class="left">
+    <img src="images/me_activity.jpg" alt="Letizia exploring">
+  </div>
+
+  <!-- RIGHT: STORY -->
+  <div class="right">
+
+    <h1>About Me</h1>
+
+  <p>
+    My name is Letizia. I was born in La Spezia, a maritime city in eastern Liguria, northern Italy, set between the sea and the Apennine mountains. It lies in the heart of the Gulf of Poets—a place shaped by contrast, where open water meets rising rock, and movement meets stillness.
+  </p>
+    
+  <p>
+    Growing up in this landscape influenced me more than I realized at the time. Surrounded by sea and mountains, I was naturally drawn to movement—sailing across the water, hiking through the hills, and observing how light, weather, and distance could transform even the most familiar places.
+  </p>
+  
+  <p>
+    It was a place of beauty, but also of limits. That tension quietly shaped in me a desire to go further—to look beyond the horizon I saw every day and understand what existed beyond it.
+  </p>
+  
+  <p>
+    Curiosity has always guided my path. It first led me to physics, where I learned to see the world through patterns, structure, and underlying principles. Over time, that same curiosity expanded beyond science into geography, cultures, and languages, leading me to move across places and immerse myself in different ways of life.
+  </p>
+  
+   <p>
+    Eventually, that perspective became something more instinctive. I became a backpacker, and along the way, photography found me. It became a way of observing the world—of paying attention not only to places, but to how they change, how they feel, and how moments shift from one state to another.
+  </p>
+ 
+  <p>
+    Today, that same curiosity is what drives this journal. It is a space where I collect not just images, but impressions—of time, movement, and atmosphere. A way to share experiences with those who dream of distant places, to exchange perspectives, and to give something back.
+  </p>
+  
+   <p class="quote">
+    Because what is knowledge, if not shared?
+  </p>
+
+
+    <!-- PHOTO STRIP -->
+    <div class="photo-strip">
+      <img src="images/laspezia.jpg">
+      <img src="images/mountains.jpg">
+      <img src="images/sailing.jpg">
+    </div>
+
+    <!-- LINKS -->
+    <div class="links">
+
+      <span>Keep in touch / follow my journey</span>
+
+      <a href="https://instagram.com/" target="_blank">
+        Instagram → Travel updates & ongoing trips
+      </a>
+
+      <a href="www.linkedin.com/in/letiziaferbel/" target="_blank">
+        LinkedIn → Academic & professional journey
+      </a>
+
+      <a href="mailto:litizzetto96@hotmail.it">
+        Contact → Feel free to reach out
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About | Trail & Pixel</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.75;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
       background: rgba(255,255,255,0.85);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(0,0,0,0.06);
@@ -92,85 +321,3 @@
 </head>
 
 <body>
-<body>
-
-<!-- NAV -->
-<nav>
-  <div><a href="index.html"><strong>Trail & Pixel</strong></a></div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="journal.html">Journal</a>
-    <a href="photography.html">Photography</a>
-    <a href="map.html">Map</a>
-  </div>
-</nav>
-
-<!-- TEXT STORY -->
-<div class="container">
-
-  <h1>About Me</h1>
-
-  <p>
-    My name is Letizia. I was born in La Spezia, a maritime city in eastern Liguria, northern Italy, set between the sea and the Apennine mountains. It lies in the heart of the Gulf of Poets—a place shaped by contrast, where open water meets rising rock, and movement meets stillness.
-  </p>
-
-</div>
-
-<!-- IMAGE 1 -->
-<div class="full-bleed">
-  <img src="images/photo1.jpg" alt="La Spezia">
-</div>
-  
-<div class="container">
-  <p>
-    Growing up in this landscape influenced me more than I realized at the time. Surrounded by sea and mountains, I was naturally drawn to movement—sailing across the water, hiking through the hills, and observing how light, weather, and distance could transform even the most familiar places.
-  </p>
-  </p>
-    <img src="images/photo1.jpg"  class="story-img">
-  </p>      
-   <p>
-    It was a place of beauty, but also of limits. That tension quietly shaped in me a desire to go further—to look beyond the horizon I saw every day and understand what existed beyond it.
-   </p>
-
-</div>
-
-<!-- IMAGE 2 -->
-<div class="full-bleed">
-  <img src="images/photo1.jpg" alt="Mountains">
-</div>
-
-<!-- CONTINUED STORY -->
-<div class="container">
-  <p>
-    Curiosity has always guided my path. It first led me to physics, where I learned to see the world through patterns, structure, and underlying principles. Over time, that same curiosity expanded beyond science into geography, cultures, and languages, leading me to move across places and immerse myself in different ways of life.
-  </p>
-  
-</div>
-
-<!-- IMAGE 3 -->
-<div class="full-bleed">
-  <img src="images/photo1.jpg" alt="Sailing">
-</div>
-
-<!-- CONTINUED STORY -->
-<div class="container">
-    
-   <p>
-    Eventually, that perspective became something more instinctive. I became a backpacker, and along the way, photography found me. It became a way of observing the world—of paying attention not only to places, but to how they change, how they feel, and how moments shift from one state to another.
-  </p>
- 
-  <p>
-    Today, that same curiosity is what drives this journal. It is a space where I collect not just images, but impressions—of time, movement, and atmosphere. A way to share experiences with those who dream of distant places, to exchange perspectives, and to give something back.
-  </p>
-  
-   <p class="quote">
-    Because what is knowledge, if not shared?
-  </p>
-
-  </div>
-
-</div>
-
-</body>
-</html>
