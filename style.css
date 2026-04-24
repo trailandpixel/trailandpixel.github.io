@@ -193,6 +193,10 @@ nav a {
   margin-bottom: 20px;
 }
 
+.about nav a {
+  color: white;
+}
+
 .quote {
   font-style: italic;
   opacity: 0.8;
