@@ -57,7 +57,7 @@ nav a:first-child {
 ========================= */
 
 .hero {
-  height: 45vh;
+  height: 65vh;
   background: url('images/hero.jpg') center/cover no-repeat;
   position: relative;
 
