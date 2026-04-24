@@ -243,3 +243,7 @@ nav a {
 }
   }
 }
+
+.about nav a {
+  color: white;
+}
