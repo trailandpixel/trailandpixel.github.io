@@ -6,136 +6,7 @@
 
   <title>About | Trail & Pixel</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: #222;
-      background: #fff;
-    }
-
-    /* NAV (same as homepage) */
-    nav {
-      position: absolute;
-      width: 100%;
-      padding: 18px 30px;
-      display: flex;
-      justify-content: space-between;
-      z-index: 10;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 0.95rem;
-    }
-
-    /* HERO (identity section) */
-    .hero {
-      height: 45vh;
-      background: url('images/me_activity.jpg') center/cover no-repeat;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.45)
-      );
-    }
-
-    .hero-content {
-      position: relative;
-      max-width: 700px;
-      padding: 0 20px;
-    }
-
-    .hero h1 {
-      font-size: 2.4rem;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    .hero p {
-      margin-top: 10px;
-      font-weight: 300;
-      opacity: 0.9;
-    }
-
-    /* TEXT */
-    .content {
-      max-width: 800px;
-      margin: 70px auto;
-      padding: 0 25px;
-      font-size: 1.05rem;
-      line-height: 1.75;
-      color: #333;
-    }
-
-    .content p {
-      margin-bottom: 20px;
-    }
-
-    /* IMAGE STRIP */
-    .strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 25px;
-    }
-
-    .strip img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-
-    /* LINKS */
-    .links {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 0 25px;
-      border-top: 1px solid rgba(0,0,0,0.08);
-      padding-top: 40px;
-    }
-
-    .links a {
-      display: block;
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-
-    .links span {
-      display: block;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    /* MOBILE */
-    @media (max-width: 900px) {
-      .strip {
-        grid-template-columns: 1fr;
-      }
-
-      .strip img {
-        height: 260px;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -153,7 +24,7 @@
 </nav>
 
 <!-- HERO -->
-<div class="hero">
+<div class="about-hero">
 
   <div class="overlay"></div>
 
@@ -164,49 +35,38 @@
 
 </div>
 
-<!-- TEXT -->
-<div class="content">
-  <p>
-    My name is Letizia. I was born in La Spezia, a maritime city in eastern Liguria, northern Italy, set between the sea and the Apennine mountains. It lies in the heart of the Gulf of Poets—a place shaped by contrast, where open water meets rising rock, and movement meets stillness.
-  </p>
-    
-  <p>
-    Growing up in this landscape influenced me more than I realized at the time. Surrounded by sea and mountains, I was naturally drawn to movement—sailing across the water, hiking through the hills, and observing how light, weather, and distance could transform even the most familiar places.
-  </p>
-  
-  <p>
-    It was a place of beauty, but also of limits. That tension quietly shaped in me a desire to go further—to look beyond the horizon I saw every day and understand what existed beyond it.
-  </p>
-  
-  <p>
-    Curiosity has always guided my path. It first led me to physics, where I learned to see the world through patterns, structure, and underlying principles. Over time, that same curiosity expanded beyond science into geography, cultures, and languages, leading me to move across places and immerse myself in different ways of life.
-  </p>
-  
-   <p>
-    Eventually, that perspective became something more instinctive. I became a backpacker, and along the way, photography found me. It became a way of observing the world—of paying attention not only to places, but to how they change, how they feel, and how moments shift from one state to another.
-   </p>
-  
-   <p>
-    Trail & Pixel grew out of this way of moving and observing—trail as the paths taken through places, across journeys and landscapes; pixel as the way those moments are seen, interpreted, and preserved through photography.
-   </p>
-  
-   <p>
-    Today, it takes the form of this journal: a space where I collect not just images, but impressions—of time, movement, and atmosphere, alongside notes, itineraries, and observations from the places I move through.
-   </p>
-  
-   <p class="quote">
-    Because what is knowledge, if not shared?
-  </p>
+<!-- CONTENT -->
+<div class="about-content">
+
+  <p>My name is Letizia. I was born in La Spezia, a maritime city in eastern Liguria, northern Italy, set between the sea and the Apennine mountains. It lies in the heart of the Gulf of Poets—a place shaped by contrast, where open water meets rising rock, and movement meets stillness.</p>
+
+  <p>Growing up in this landscape influenced me more than I realized at the time. Surrounded by sea and mountains, I was naturally drawn to movement—sailing across the water, hiking through the hills, and observing how light, weather, and distance could transform even the most familiar places.</p>
+
+  <p>It was a place of beauty, but also of limits. That tension quietly shaped in me a desire to go further—to look beyond the horizon I saw every day and understand what existed beyond it.</p>
+
+  <p>Curiosity has always guided my path. It first led me to physics, where I learned to see the world through patterns, structure, and underlying principles. Over time, that same curiosity expanded beyond science into geography, cultures, and languages, leading me to move across places and immerse myself in different ways of life.</p>
+
+  <p>Eventually, that perspective became something more instinctive. I became a backpacker, and along the way, photography found me. It became a way of observing the world—of paying attention not only to places, but to how they change, how they feel, and how moments shift from one state to another.</p>
+
+  <p>Trail & Pixel grew out of this way of moving and observing—trail as the paths taken through places, across journeys and landscapes; pixel as the way those moments are seen, interpreted, and preserved through photography.</p>
+
+  <p>Today, it takes the form of this journal: a space where I collect not just images, but impressions—of time, movement, and atmosphere, alongside notes, itineraries, and observations from the places I move through.</p>
+
+  <p class="quote">Because what is knowledge, if not shared?</p>
+
+</div>
 
 <!-- IMAGE STRIP -->
 <div class="strip">
+
   <img src="images/laspezia.jpg">
   <img src="images/mountains.jpg">
   <img src="images/sailing.jpg">
+
 </div>
 
 <!-- LINKS -->
-<div class="links">
+<div class="about-links">
 
   <span>Keep in touch / follow my journey</span>
 
