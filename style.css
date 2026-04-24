@@ -67,11 +67,9 @@ nav a {
 }
 
 .hero-content {
-  position: relative;
   max-width: 700px;
-  padding-left: 8vw;
-  padding-right: 20px;
-  text-align: left;
+  padding: 0 25px;
+  margin: 0 auto;
 }
 
 .hero h1 {
