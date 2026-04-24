@@ -20,6 +20,7 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  color: white;
 }
 
 nav a {
