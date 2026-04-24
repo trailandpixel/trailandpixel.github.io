@@ -1,21 +1,5 @@
 /* =========================
-   BASE
-========================= */
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background: #fff;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* =========================
-   NAV (GLOBAL)
+   NAV
 ========================= */
 
 nav {
@@ -25,24 +9,16 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 10;
-
-  background: linear-gradient(
-  to bottom,
-  rgba(0,0,0,0.25),
-  rgba(0,0,0,0)
-  );
 }
 
-/* default (over hero images) */
 nav a {
   color: white;
-  text-decoration: none;
   margin-left: 18px;
   font-size: 0.95rem;
 }
 
 /* =========================
-   HERO (HOMEPAGE)
+   HERO
 ========================= */
 
 .hero {
@@ -55,212 +31,30 @@ nav a {
   color: white;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.25),
-    rgba(0,0,0,0.55)
-  );
-}
-
 .hero-content {
   max-width: 700px;
   padding: 0 25px;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  margin: 0;
-  letter-spacing: 1px;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-weight: 300;
-  opacity: 0.9;
+  margin-left: 8vw;
 }
 
 /* =========================
-   FEATURED (HOMEPAGE)
+   ABOUT LINK FIX (IMPORTANT)
 ========================= */
 
-.featured {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 25px;
-}
-
-.featured h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.featured-card {
-  display: block;
-  padding: 0;
-}
-
-.featured-card img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.featured-text h4 {
-  margin-top: 0;
-  font-weight: 500;
-}
-
-.featured-text p {
-  color: #555;
-}
-
-/* =========================
-   SECTIONS (HOMEPAGE)
-========================= */
-
-.sections {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 25px;
-}
-
-.card {
-  padding: 0;
-}
-
-.card h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.card p {
-  font-size: 0.95rem;
-  opacity: 0.7;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 12px;
-  color: #111;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-/* =========================
-   ABOUT LINK (HOMEPAGE)
-========================= */
-
--link {
+.about-link {
   text-align: center;
   margin: 70px 0;
 }
 
+/* ❌ FIXED TYPO HERE */
 .about-link a {
   color: #111;
-  font-size: 0.95rem;
 }
 
 /* =========================
-   ABOUT PAGE
+   ABOUT NAV
 ========================= */
-
-.about-hero {
-  height: 45vh;
-  background: url('images/me_activity.jpg') center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  color: white;
-}
-
-.about-content {
-  max-width: 800px;
-  margin: 70px auto;
-  padding: 0 25px;
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: #333;
-}
-
-.about-content p {
-  margin-bottom: 20px;
-}
 
 body.about nav a {
   color: white;
-}
-
-.quote {
-  font-style: italic;
-  opacity: 0.8;
-}
-
-/* IMAGE STRIP */
-
-.strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 25px;
-}
-
-.strip img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-/* ABOUT LINKS */
-
-.about-links {
-  max-width: 800px;
-  margin: 80px auto;
-  padding: 40px 25px 0 25px;
-  border-top: 1px solid rgba(0,0,0,0.08);
-}
-
-.about-links span {
-  display: block;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.about-links a {
-  display: block;
-  color: #111;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-  .sections {
-    grid-template-columns: 1fr;
-  }
-
-  .strip {
-    grid-template-columns: 1fr;
-  }
-
-  .strip img {
-    height: 260px;
-  }
 }
