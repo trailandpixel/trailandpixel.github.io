@@ -162,7 +162,7 @@ nav a {
    ABOUT LINK (HOMEPAGE)
 ========================= */
 
-.about-link {
+-link {
   text-align: center;
   margin: 70px 0;
 }
@@ -182,7 +182,7 @@ nav a {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   color: white;
 }
