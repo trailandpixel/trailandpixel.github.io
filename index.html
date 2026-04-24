@@ -3,181 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Trail & Pixel</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: #222;
-      background: #fff;
-    }
-
-    /* NAV */
-    nav {
-      position: absolute;
-      width: 100%;
-      padding: 18px 30px;
-      display: flex;
-      justify-content: space-between;
-      z-index: 10;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 0.95rem;
-    }
-
-    /* HERO */
-.hero {
-  height: 78vh;
-  background: url('images/hero.jpg') center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-}
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.25),
-        rgba(0,0,0,0.55)
-      );
-    }
-
-.hero-content {
-  position: relative;
-  max-width: 700px;
-  padding-left: 8vw;
-  padding-right: 20px;
-  text-align: left;
-}
-
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 500;
-      margin: 0;
-      letter-spacing: 1px;
-    }
-
-    .hero p {
-      margin-top: 10px;
-      font-weight: 300;
-      opacity: 0.9;
-    }
-
-
-    /* SECTIONS */
-.sections {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-.card {
-  border: none;
-  padding: 0;
-}
-
-    .card:hover {
-      border-color: rgba(0,0,0,0.2);
-      transform: translateY(-2px);
-    }
-
-.card h3 {
-  font-size: 1.2rem;
-}
-
-
-.card p {
-  font-size: 0.95rem;
-  opacity: 0.7;
-}
-    .card a {
-      display: inline-block;
-      margin-top: 12px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
-
-    /* FEATURED */
-    .featured {
-      max-width: 1100px;
-      margin: 0 auto 80px auto;
-      padding: 0 25px;
-    }
-
-    .featured h3 {
-      font-weight: 500;
-      margin-bottom: 20px;
-    }
-
-.featured-card {
-  display: block;
-  border: none;
-  padding: 0;
-}
-
-.featured-card img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-
-.featured-text {
-  width: 100%;
-}
-    .featured-text h4 {
-      margin-top: 0;
-      font-weight: 500;
-    }
-
-    .featured-text p {
-      color: #555;
-    }
-
-    /* FOOTER LINK */
-    .about-link {
-      text-align: center;
-      margin-bottom: 70px;
-    }
-
-    .about-link a {
-      text-decoration: none;
-      color: #111;
-      font-size: 0.95rem;
-    }
-
-    /* MOBILE */
-    @media (max-width: 900px) {
-      .sections {
-        grid-template-columns: 1fr;
-      }
-
-      .featured-card {
-        flex-direction: column;
-      }
-
-      .featured-card img,
-      .featured-text {
-        width: 100%;
-      }
-    }
-  </style>
-</head>
-
+  
+  <link rel="stylesheet" href="styles.css">
+<head>
+  
 <body>
 
 <!-- NAV -->
@@ -194,19 +24,14 @@
 
 <!-- HERO -->
 <div class="hero">
-
   <div class="overlay"></div>
 
   <div class="hero-content">
     <h1>Trail & Pixel</h1>
-    <p><p>A journal of backpacking, travel, and photography—collecting images, notes, and impressions from the places I move through.</p></p>
+    <p>
+      A journal of backpacking, travel, and photography—collecting images, notes, and impressions from the places I move through.
+    </p>
   </div>
-
-</div>
-
-<!-- INTRO -->
-<div class="intro">
-  A journal of backpacking, travel, photography, and moments collected along the way — through mountains, cities, sailing, and everything in between.
 </div>
 
 <!-- FEATURED ENTRY -->
@@ -220,9 +45,7 @@
 
     <div class="featured-text">
       <h4>Three days in the Dolomites</h4>
-      <p>
-        Rain, fog, and one unexpected sunrise that changed the whole journey.
-      </p>
+      <p>Rain, fog, and one unexpected sunrise that changed the whole journey.</p>
       <a href="#">Read story →</a>
     </div>
 
@@ -230,7 +53,7 @@
 
 </div>
 
-<!-- NAV SECTIONS -->
+<!-- SECTIONS -->
 <div class="sections">
 
   <div class="card">
@@ -253,7 +76,7 @@
 
 </div>
 
-<!-- ABOUT TEASER -->
+<!-- ABOUT LINK -->
 <div class="about-link">
   <a href="about.html">More about me and this Journal →</a>
 </div>
