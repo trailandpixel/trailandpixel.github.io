@@ -10,11 +10,12 @@ body {
   background: #fff;
 }
 
-section, .featured, .sections, .about-content {
-  opacity: 1;
+a {
+  text-decoration: none;
 }
+
 /* =========================
-   NAV
+   NAV (GLOBAL)
 ========================= */
 
 nav {
@@ -24,18 +25,16 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 10;
-  color: white;
 }
 
 nav a {
   color: white;
-  text-decoration: none;
   margin-left: 18px;
   font-size: 0.95rem;
 }
 
 /* =========================
-   HERO
+   HERO (HOMEPAGE)
 ========================= */
 
 .hero {
@@ -81,7 +80,7 @@ nav a {
 }
 
 /* =========================
-   FEATURED
+   FEATURED (HOMEPAGE)
 ========================= */
 
 .featured {
@@ -97,7 +96,6 @@ nav a {
 
 .featured-card {
   display: block;
-  border: none;
   padding: 0;
 }
 
@@ -118,7 +116,7 @@ nav a {
 }
 
 /* =========================
-   SECTIONS
+   SECTIONS (HOMEPAGE)
 ========================= */
 
 .sections {
@@ -131,7 +129,6 @@ nav a {
 }
 
 .card {
-  border: none;
   padding: 0;
 }
 
@@ -148,14 +145,13 @@ nav a {
 .card a {
   display: inline-block;
   margin-top: 12px;
-  text-decoration: none;
   color: #111;
   font-weight: 500;
   font-size: 0.9rem;
 }
 
 /* =========================
-   ABOUT LINK
+   ABOUT LINK (HOMEPAGE)
 ========================= */
 
 .about-link {
@@ -164,19 +160,13 @@ nav a {
 }
 
 .about-link a {
-  text-decoration: none;
   color: #111;
   font-size: 0.95rem;
 }
 
 /* =========================
-   MOBILE
+   ABOUT PAGE
 ========================= */
-
-@media (max-width: 900px) {
-  .sections {
-    grid-template-columns: 1fr;
-
 
 .about-hero {
   height: 45vh;
@@ -208,6 +198,7 @@ nav a {
 }
 
 /* IMAGE STRIP */
+
 .strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -223,21 +214,13 @@ nav a {
   object-fit: cover;
 }
 
-/* LINKS */
+/* ABOUT LINKS */
+
 .about-links {
   max-width: 800px;
   margin: 80px auto;
-  padding: 0 25px;
+  padding: 40px 25px 0 25px;
   border-top: 1px solid rgba(0,0,0,0.08);
-  padding-top: 40px;
-}
-
-.about-links a {
-  display: block;
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .about-links span {
@@ -245,9 +228,29 @@ nav a {
   color: #666;
   margin-bottom: 20px;
 }
-  }
+
+.about-links a {
+  display: block;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.about nav a {
-  color: white;
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .sections {
+    grid-template-columns: 1fr;
+  }
+
+  .strip {
+    grid-template-columns: 1fr;
+  }
+
+  .strip img {
+    height: 260px;
+  }
 }
