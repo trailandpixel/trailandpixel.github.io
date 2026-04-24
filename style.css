@@ -19,18 +19,31 @@ a {
 ========================= */
 
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 18px 30px;
   display: flex;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 1000;
+
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* default (over hero) */
 nav a {
   color: white;
   margin-left: 18px;
   font-size: 0.95rem;
+}
+
+/* when NOT on hero (white background pages) */
+body:not(.home) nav {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+body:not(.home) nav a {
+  color: #111;
 }
 
 /* =========================
