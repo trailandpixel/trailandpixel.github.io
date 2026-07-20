@@ -533,6 +533,19 @@ nav strong {
 
 }
 
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+
+    position: relative;
+
+    max-width:850px;
+
+    padding:0 25px;
+
+}
 
 
 /* =========================
@@ -577,15 +590,6 @@ nav a {
 
 
 
-.hero-content {
-
-    position: relative;
-
-    max-width:850px;
-
-    padding:0 25px;
-
-}
 
 
 .hero h1 {
