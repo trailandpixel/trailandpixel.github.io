@@ -136,16 +136,14 @@ nav strong {
 
 .about-hero {
 
-
-    height: 70vh;
-
+    height: 75vh;
 
     background:
     url('images/me_activity.jpg')
     center/cover no-repeat;
 
-
 }
+
 
 
 
@@ -169,55 +167,46 @@ nav strong {
 
 
 
-.hero-content {
+.about-hero {
 
+    height: 75vh;
 
-    position: relative;
-
-
-    max-width: 850px;
-
-
-    margin-left: 8vw;
-
-
-    padding: 0 25px;
-
+    background:
+    url('images/me_activity.jpg')
+    center/cover no-repeat;
 
 }
 
 
+.about-hero .hero-content {
 
-.hero h1 {
+    text-align:center;
 
-
-    margin: 0;
-
-
-    font-size: 3rem;
-
-
-    font-weight: 500;
-
-
-    letter-spacing: 1px;
-
+    margin:0 auto;
 
 }
 
 
+.about-hero h1 {
 
-.hero p {
+    font-size:4rem;
+
+    letter-spacing:3px;
+
+    font-weight:400;
+
+}
 
 
-    margin-top: 12px;
+.about-hero .subtitle {
 
+    margin-top:25px;
 
-    font-size: 1.1rem;
+    font-size:1.3rem;
 
+    font-style:italic;
 
-    font-weight: 300;
-
+    font-weight:300;
 
 }
 
