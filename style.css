@@ -408,11 +408,48 @@ nav strong {
 
 
 
-
 /* =========================
-   MANIFESTO
+   ABOUT CONTENT
 ========================= */
 
+.about-content {
+
+    max-width: 850px;
+
+    margin: 90px auto;
+
+    padding: 0 25px;
+
+}
+
+
+.about-content section {
+
+    margin-bottom: 70px;
+
+}
+
+
+.about-content h2 {
+
+    font-size:1.8rem;
+
+    font-weight:500;
+
+    margin-bottom:35px;
+
+}
+
+
+.about-content p {
+
+    font-size:1.08rem;
+
+    color:#444;
+
+    margin-bottom:25px;
+
+}
 
 /* =========================
    MANIFESTO
