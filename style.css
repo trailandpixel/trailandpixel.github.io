@@ -648,3 +648,11 @@ nav a {
 
 
 }
+
+.about-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 90px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
