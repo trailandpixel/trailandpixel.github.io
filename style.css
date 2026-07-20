@@ -414,18 +414,18 @@ nav strong {
 
 .about-content {
 
-    max-width: 850px;
+    max-width:850px;
 
-    margin: 90px auto;
+    margin:90px auto;
 
-    padding: 0 25px;
+    padding:0 25px;
 
 }
 
 
 .about-content section {
 
-    margin-bottom: 70px;
+    margin-bottom:70px;
 
 }
 
@@ -647,12 +647,4 @@ nav a {
 }
 
 
-}
-
-.about-content {
-    width: 100%;
-    max-width: 850px;
-    margin: 90px auto;
-    padding-left: 25px;
-    padding-right: 25px;
 }
