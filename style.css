@@ -305,12 +305,40 @@ nav{
 
 }
 
-.hero-content h1{
 
-    color:white;
+/* =========================
+   HERO TYPOGRAPHY
+========================= */
+
+.hero-content h1 {
+
+    font-size: 5rem;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    margin: 0;
+
+    color: white;
 
 }
 
+.hero-content .subtitle {
+
+    margin-top: 15px;
+
+    font-size: 1.35rem;
+
+    font-style: italic;
+
+    font-weight: 300;
+
+    color: white;
+
+    opacity: .95;
+
+}
 
 /* ==========================================================
    PAGE CONTENT
@@ -337,9 +365,11 @@ section{
 
 .manifesto{
 
-    width:min(100% - 60px,760px);
+    max-width:620px;
 
-    margin:150px auto 130px;
+    margin:7rem auto;
+
+    padding:0 2rem;
 
     text-align:center;
 
@@ -347,11 +377,13 @@ section{
 
 .manifesto p{
 
-    font-size:1.25rem;
+    margin:1.4rem 0;
+
+    font-size:1.3rem;
+
+    line-height:1.9;
 
     font-weight:300;
-
-    margin:28px 0;
 
 }
 
