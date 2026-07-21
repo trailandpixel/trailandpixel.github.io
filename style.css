@@ -147,14 +147,9 @@ nav{
 }
 
 .logo{
-    font-size:1rem;
-    font-weight:500;
-    letter-spacing:.3px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.7rem;
     color:white;
-}
-
-.logo a{
-    color:inherit;
 }
 
 .nav-links{
@@ -164,11 +159,11 @@ nav{
 
 .nav-links a{
     color:white;
-    transition:opacity .25s ease;
+    transition:.25s;
 }
 
 .nav-links a:hover{
-    opacity:.7;
+    opacity:.65;
 }
 
 /* ==========================================================
@@ -286,16 +281,11 @@ section{
    FOOTER
 ========================================================== */
 .site-footer{
-    position: relative;
-    padding: 120px 25px;
-    background:
-        linear-gradient(
-            rgba(0,0,0,.65),
-            rgba(0,0,0,.65)
-        ),
-        url("images/footer.jpg") center center / cover no-repeat;
-    color: white;
-    text-align: center;
+    width:min(100% - 60px,760px);
+    margin:140px auto 80px;
+    padding-top:60px;
+    border-top:1px solid var(--border);
+    text-align:center;
 }
 
 .site-footer h2{
@@ -303,12 +293,12 @@ section{
 }
 
 .site-footer p{
-    color: rgba(255,255,255,.85);
+    color:var(--muted);
 }
 
 .site-footer a{
-    color: white;
-    border-bottom:1px solid rgba(255,255,255,.35);
+    font-weight:500;
+    transition:.25s;
 }
 
 .site-footer a:hover{
