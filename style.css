@@ -212,7 +212,7 @@ nav{
     z-index:100;
 
     background:linear-gradient(
-        rgba(0,0,0,.35),
+        rgba(0,0.1,0.2,.35),
         transparent
     );
 
@@ -220,7 +220,7 @@ nav{
 
 .logo{
 
-    font-family:"Cormorant Garamond",serif;
+    font-family:inherit;
 
     font-size:1.7rem;
 
