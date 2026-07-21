@@ -1,0 +1,310 @@
+/* ==========================================================
+   GOOGLE FONTS
+========================================================== */
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+*/
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+:root{
+    --content-width: 760px;
+    --wide-width: 1180px;
+    --gallery-width: 1450px;
+
+    --space-xs: 12px;
+    --space-s: 24px;
+    --space-m: 48px;
+    --space-l: 90px;
+    --space-xl: 150px;
+
+    --text:#2f2f2f;
+    --muted:#666;
+    --border:#ececec;
+    --background:#ffffff;
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:"Inter",sans-serif;
+    font-size:17px;
+    line-height:1.8;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,
+h2,
+h3,
+h4{
+    font-family:"Cormorant Garamond",serif;
+    font-weight:500;
+    color:#111;
+    line-height:1.1;
+}
+
+h1{
+    font-size:4.8rem;
+    letter-spacing:2px;
+}
+
+h2{
+    font-size:2.5rem;
+    margin-bottom:35px;
+}
+
+h3{
+    font-size:1.8rem;
+    margin-bottom:18px;
+}
+
+p{
+    margin-bottom:22px;
+    color:#444;
+}
+
+.subtitle{
+    margin-top:18px;
+    font-style:italic;
+    font-size:1.3rem;
+    color:white;
+    opacity:.95;
+}
+
+/* ==========================================================
+   CONTAINERS
+========================================================== */
+.container{
+    width:min(100% - 60px,760px);
+    margin:auto;
+}
+
+.container-wide{
+    width:min(100% - 60px,1180px);
+    margin:auto;
+}
+
+.container-gallery{
+    width:min(100% - 60px,1450px);
+    margin:auto;
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+nav{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:28px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+    background:linear-gradient(
+        rgba(0,0,0,.35),
+        transparent
+    );
+}
+
+.logo{
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.7rem;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    opacity:.65;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,0,.18),
+        rgba(0,0,0,.42)
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+    width:min(900px,90vw);
+    padding:40px;
+}
+
+.hero-content h1{
+    color:white;
+}
+
+/* ==========================================================
+   PAGE CONTENT
+========================================================== */
+main{
+    width:min(100% - 60px,760px);
+    margin:100px auto;
+}
+
+section{
+    margin-bottom:120px;
+}
+
+/* ==========================================================
+   MANIFESTO
+========================================================== */
+.manifesto{
+    width:min(100% - 60px,760px);
+    margin:120px auto;
+    text-align:center;
+}
+
+.manifesto p{
+    font-size:1.25rem;
+    font-weight:300;
+    margin:28px 0;
+}
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+.strip{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.strip img{
+    aspect-ratio:1;
+    object-fit:cover;
+}
+
+.photo-large{
+    width:100%;
+}
+
+.photo-large img{
+    height:75vh;
+    object-fit:cover;
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+.site-footer{
+    width:min(100% - 60px,760px);
+    margin:140px auto 80px;
+    padding-top:60px;
+    border-top:1px solid var(--border);
+    text-align:center;
+}
+
+.site-footer h2{
+    margin-bottom:30px;
+}
+
+.site-footer p{
+    color:var(--muted);
+}
+
+.site-footer a{
+    font-weight:500;
+    transition:.25s;
+}
+
+.site-footer a:hover{
+    opacity:.65;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media (max-width:900px){
+    nav{
+        padding:22px;
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .nav-links{
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    h1{
+        font-size:3rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    main{
+        width:min(100% - 40px,760px);
+    }
+
+    .manifesto{
+        width:min(100% - 40px,760px);
+    }
+
+    .strip{
+        grid-template-columns:1fr;
+    }
+}
